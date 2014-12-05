@@ -1,0 +1,108 @@
+/*------------------------------------*\
+    #HEADINGS-RESPONSIVE-GENERATOR
+\*------------------------------------*/
+
+// Here we set a variable assuming that headings responsive are not set
+// globally. If they have been previously been defined, the following variable
+// will be overriden and will be set to `true`.
+$enable-inuit-headings--responsive--alpha:   false !default;
+$enable-inuit-headings--responsive--beta:    false !default;
+$enable-inuit-headings--responsive--gamma:   false !default;
+$enable-inuit-headings--responsive--delta:   false !default;
+$enable-inuit-headings--responsive--epsilon: false !default;
+$enable-inuit-headings--responsive--zeta:    false !default;
+
+
+
+
+
+@mixin inuit-headings-responsive-generator() {
+
+    // Loop through the list of breakpoints we’ve provided in our settings file.
+    @each $breakpoint in $breakpoints{
+
+        // Grab the alias from their respective location in the list.
+        $generate-headings-responsive-alias: nth($breakpoint, 1) !global;
+
+        // We don’t want to generate responsive headings for retina devices.
+        @if ($generate-headings-responsive-alias != "retina") {
+
+            @include media-query($generate-headings-responsive-alias){
+                @content;
+            };
+
+        }
+
+        $generate-headings-responsive-alias: null !global;
+    }
+}
+
+
+
+
+
+@if ($enable-inuit-headings--responsive--alpha == true) {
+
+    @include inuit-headings-responsive-generator() {
+        %#{$inuit-namespace}#{$generate-headings-responsive-alias}-alpha,
+        .#{$inuit-namespace}#{$generate-headings-responsive-alias}-alpha{
+            @include inuit-font-size($inuit-heading-size-1);
+        }
+    }
+
+}
+
+@if ($enable-inuit-headings--responsive--beta == true) {
+
+    @include inuit-headings-responsive-generator() {
+        %#{$inuit-namespace}#{$generate-headings-responsive-alias}-beta,
+        .#{$inuit-namespace}#{$generate-headings-responsive-alias}-beta{
+            @include inuit-font-size($inuit-heading-size-2);
+        }
+    }
+
+}
+
+@if ($enable-inuit-headings--responsive--gamma == true) {
+
+    @include inuit-headings-responsive-generator() {
+        %#{$inuit-namespace}#{$generate-headings-responsive-alias}-gamma,
+        .#{$inuit-namespace}#{$generate-headings-responsive-alias}-gamma{
+            @include inuit-font-size($inuit-heading-size-3);
+        }
+    }
+
+}
+
+@if ($enable-inuit-headings--responsive--delta == true) {
+
+    @include inuit-headings-responsive-generator() {
+        %#{$inuit-namespace}#{$generate-headings-responsive-alias}-delta,
+        .#{$inuit-namespace}#{$generate-headings-responsive-alias}-delta{
+            @include inuit-font-size($inuit-heading-size-4);
+        }
+    }
+
+}
+
+@if ($enable-inuit-headings--responsive--epsilon == true) {
+
+    @include inuit-headings-responsive-generator() {
+        %#{$inuit-namespace}#{$generate-headings-responsive-alias}-epsilon,
+        .#{$inuit-namespace}#{$generate-headings-responsive-alias}-epsilon{
+            @include inuit-font-size($inuit-heading-size-5);
+        }
+    }
+
+}
+
+@if ($enable-inuit-headings--responsive--zeta == true) {
+
+    @include inuit-headings-responsive-generator() {
+        %#{$inuit-namespace}#{$generate-headings-responsive-alias}-zeta,
+        .#{$inuit-namespace}#{$generate-headings-responsive-alias}-zeta{
+            @include inuit-font-size($inuit-heading-size-6);
+        }
+    }
+
+}
