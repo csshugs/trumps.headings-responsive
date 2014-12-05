@@ -2,6 +2,12 @@
     #HEADINGS-RESPONSIVE-GENERATOR
 \*------------------------------------*/
 
+/**
+ * Based on _base.headings, this will generate resonsive equivalents of the
+ * headings which change their font-size depending on the media-queries
+ * set in _settings.responsive.
+ */
+
 // Here we set a variable assuming that headings responsive are not set
 // globally. If they have been previously been defined, the following variable
 // will be overriden and will be set to `true`.
