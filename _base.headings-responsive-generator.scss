@@ -11,12 +11,12 @@
 // Here we set a variable assuming that headings responsive are not set
 // globally. If they have been previously been defined, the following variable
 // will be overriden and will be set to `true`.
-$enable-inuit-headings--responsive--alpha:   false !default;
-$enable-inuit-headings--responsive--beta:    false !default;
-$enable-inuit-headings--responsive--gamma:   false !default;
-$enable-inuit-headings--responsive--delta:   false !default;
-$enable-inuit-headings--responsive--epsilon: false !default;
-$enable-inuit-headings--responsive--zeta:    false !default;
+$inuit-enable-headings--responsive--alpha:   false !default;
+$inuit-enable-headings--responsive--beta:    false !default;
+$inuit-enable-headings--responsive--gamma:   false !default;
+$inuit-enable-headings--responsive--delta:   false !default;
+$inuit-enable-headings--responsive--epsilon: false !default;
+$inuit-enable-headings--responsive--zeta:    false !default;
 
 
 
