@@ -48,7 +48,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 
 
-@if ($enable-inuit-headings--responsive--alpha == true) {
+@if ($inuit-enable-headings--responsive--alpha == true) {
 
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-alpha,
@@ -59,7 +59,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 }
 
-@if ($enable-inuit-headings--responsive--beta == true) {
+@if ($inuit-enable-headings--responsive--beta == true) {
 
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-beta,
@@ -70,7 +70,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 }
 
-@if ($enable-inuit-headings--responsive--gamma == true) {
+@if ($inuit-enable-headings--responsive--gamma == true) {
 
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-gamma,
@@ -81,7 +81,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 }
 
-@if ($enable-inuit-headings--responsive--delta == true) {
+@if ($inuit-enable-headings--responsive--delta == true) {
 
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-delta,
@@ -92,7 +92,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 }
 
-@if ($enable-inuit-headings--responsive--epsilon == true) {
+@if ($inuit-enable-headings--responsive--epsilon == true) {
 
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-epsilon,
@@ -103,7 +103,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 }
 
-@if ($enable-inuit-headings--responsive--zeta == true) {
+@if ($inuit-enable-headings--responsive--zeta == true) {
 
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-zeta,
