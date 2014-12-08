@@ -50,6 +50,9 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 @if ($inuit-enable-headings--responsive--alpha == true) {
 
+    /**
+     * Responsive alpha.
+     */
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-alpha,
         .#{$inuit-namespace}#{$generate-headings-responsive-alias}-alpha{
@@ -61,6 +64,9 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 @if ($inuit-enable-headings--responsive--beta == true) {
 
+    /**
+     * Responsive beta.
+     */
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-beta,
         .#{$inuit-namespace}#{$generate-headings-responsive-alias}-beta{
@@ -72,6 +78,9 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 @if ($inuit-enable-headings--responsive--gamma == true) {
 
+    /**
+     * Responsive gamma.
+     */
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-gamma,
         .#{$inuit-namespace}#{$generate-headings-responsive-alias}-gamma{
@@ -83,6 +92,9 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 @if ($inuit-enable-headings--responsive--delta == true) {
 
+    /**
+     * Responsive delta.
+     */
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-delta,
         .#{$inuit-namespace}#{$generate-headings-responsive-alias}-delta{
@@ -94,6 +106,9 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 @if ($inuit-enable-headings--responsive--epsilon == true) {
 
+    /**
+     * Responsive epsilon.
+     */
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-epsilon,
         .#{$inuit-namespace}#{$generate-headings-responsive-alias}-epsilon{
@@ -105,6 +120,9 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 
 @if ($inuit-enable-headings--responsive--zeta == true) {
 
+    /**
+     * Responsive zeta.
+     */
     @include inuit-headings-responsive-generator() {
         %#{$inuit-namespace}#{$generate-headings-responsive-alias}-zeta,
         .#{$inuit-namespace}#{$generate-headings-responsive-alias}-zeta{
