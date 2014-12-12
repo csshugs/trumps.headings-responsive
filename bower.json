@@ -1,12 +1,12 @@
 {
-  "name": "inuit-headings-responsive-generator",
-  "version": "0.1.1",
-  "homepage": "https://github.com/TryGenesis/base.headings-responsive-generator",
+  "name": "inuit-responsive-headings",
+  "version": "0.1.2",
+  "homepage": "https://github.com/TryGenesis/base.headings-responsive",
   "authors": [
     "Dennis Heibuelt <dennis@csshugs.com>"
   ],
   "description": "A generator for responsive headings classes, changing their sizes depending on media-queries",
-  "main": "_base.headings-responsive-generator.scss",
+  "main": "_base.headings-responsive.scss",
   "keywords": [
     "inuitcss",
     "oocss",
