@@ -23,7 +23,6 @@ $inuit-enable-headings--responsive--zeta:    false !default;
 @each $breakpoint in $breakpoints {
 
     $alias:     nth($breakpoint, 1);
-    $condition: nth($breakpoint, 2);
 
     @include media-query($alias) {
 
@@ -32,8 +31,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
             /**
              * Responsive alpha #{$alias}
              */
-            %#{$inuit-namespace}#{$alias}-alpha,
-            .#{$inuit-namespace}#{$alias}-alpha{
+            .#{$inuit-namespace}u-alpha-#{$alias} {
                 @include inuit-font-size($inuit-heading-size-1);
             }
 
@@ -44,8 +42,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
             /**
              * Responsive beta #{$alias}
              */
-            %#{$inuit-namespace}#{$alias}-beta,
-            .#{$inuit-namespace}#{$alias}-beta{
+            .#{$inuit-namespace}u-beta-#{$alias} {
                 @include inuit-font-size($inuit-heading-size-2);
             }
 
@@ -56,8 +53,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
             /**
              * Responsive gamma #{$alias}
              */
-            %#{$inuit-namespace}#{$alias}-gamma,
-            .#{$inuit-namespace}#{$alias}-gamma{
+            .#{$inuit-namespace}u-gamma-#{$alias} {
                 @include inuit-font-size($inuit-heading-size-3);
             }
 
@@ -68,8 +64,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
             /**
              * Responsive delta #{$alias}
              */
-            %#{$inuit-namespace}#{$alias}-delta,
-            .#{$inuit-namespace}#{$alias}-delta{
+            .#{$inuit-namespace}u-delta-#{$alias} {
                 @include inuit-font-size($inuit-heading-size-4);
             }
 
@@ -80,8 +75,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
             /**
              * Responsive epsilon #{$alias}
              */
-            %#{$inuit-namespace}#{$alias}-epsilon,
-            .#{$inuit-namespace}#{$alias}-epsilon{
+            .#{$inuit-namespace}u-epsilon-#{$alias} {
                 @include inuit-font-size($inuit-heading-size-5);
             }
 
@@ -92,8 +86,7 @@ $inuit-enable-headings--responsive--zeta:    false !default;
             /**
              * Responsive zeta #{$alias}
              */
-            %#{$inuit-namespace}#{$alias}-zeta,
-            .#{$inuit-namespace}#{$alias}-zeta{
+            .#{$inuit-namespace}u-zeta-#{$alias} {
                 @include inuit-font-size($inuit-heading-size-6);
             }
 
